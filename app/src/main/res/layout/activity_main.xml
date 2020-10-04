@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <FrameLayout
+            android:id="@+id/fragment_container1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout="@layout/fragment_simple"
+            android:tag="miunicotag" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/nemo" />
+                <Button
+                    android:id="@+id/btnVote1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/standard_margin"
+                    android:layout_marginLeft="@dimen/standard_margin"
+                    android:layout_marginTop="@dimen/standard_margin"
+                    android:text="@string/open_txt" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_wide"
+                    android:layout_marginLeft="@dimen/margin_wide"
+                    android:layout_marginEnd="@dimen/margin_wide"
+                    android:layout_marginRight="@dimen/margin_wide"
+                    android:text="@string/title1"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+                <ScrollView
+                    android:id="@+id/scrollView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="@dimen/standard_margin"
+                    android:layout_marginEnd="@dimen/standard_margin"
+                    android:layout_marginRight="@dimen/standard_margin"
+                    android:layout_marginBottom="@dimen/standard_margin">
+
+                    <TextView
+                        android:id="@+id/article1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/article1"/>
+
+                </ScrollView>
+            </LinearLayout>
+
+        </LinearLayout>
+        <FrameLayout
+            android:id="@+id/fragment_container2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout="@layout/fragment_simple"
+            android:tag="miunicotag" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/rio" />
+                <Button
+                    android:id="@+id/btnVote2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/standard_margin"
+                    android:layout_marginLeft="@dimen/standard_margin"
+                    android:layout_marginTop="@dimen/standard_margin"
+                    android:text="@string/open_txt" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/title2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_wide"
+                    android:layout_marginLeft="@dimen/margin_wide"
+                    android:layout_marginEnd="@dimen/margin_wide"
+                    android:layout_marginRight="@dimen/margin_wide"
+                    android:text="@string/title2"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+                <ScrollView
+                    android:id="@+id/scrollView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="@dimen/standard_margin"
+                    android:layout_marginEnd="@dimen/standard_margin"
+                    android:layout_marginRight="@dimen/standard_margin"
+                    android:layout_marginBottom="@dimen/standard_margin">
+
+                    <TextView
+                        android:id="@+id/article2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/article2"/>
+
+                </ScrollView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/CountVote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contar votaciones"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            />
+        <TextView
+            android:id="@+id/tvre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Sin votaciones"/>
+    </LinearLayout>
+</ScrollView>
+
+
+
+
+
+</LinearLayout>

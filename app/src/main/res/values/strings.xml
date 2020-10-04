@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">FilmsVote</string>
+    <string name="title1">Buscando a Nemo</string>
+    <string name="article1">Nemo, un pequeño pececillo, muy querido y protegido por su padre, se pierde fuera de la gran barrera del arrecife australiano, después de ser capturado por este arrecife, Nemo terminará en una pecera en Sidney. Su padre, un pez payaso, parte en su búsqueda y se embarca en una peligrosa aventura con Dory, un pez con muy poca memoria. Al mismo tiempo, Nemo y sus nuevos amigos ya traman un plan para escapar de la pecera.</string>
+    <string name="title2">Río</string>
+    <string name="article2">En medio de una selva de rico colorido, un paraíso playero, una metrópoli tan enorme como descontrolada, y la celebración en que culminan todas las celebraciones, más conocida como el Carnaval. RÍO es más que un mero punto en el mapa; es un lugar mágico, un estado de ánimo y una actitud.</string>
+
+    <string name="yes">Si</string>
+    <string name="no">No</string>
+    <string name="yes_message">ARTICULO: Me gusta</string>
+    <string name="no_message">ARTICULO: Gracias</string>
+    <string name="question_article">¿Te gustó el articulo?</string>
+
+    <string name="open">Abrir</string>
+    <string name="cerrar">Close</string>
+
+    <string name="exception_message">Es necesario implementar la interfaz</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="open_txt">¿Te gustó? Vota!</string>
+    <string name="close">Cerrar</string>
+
+</resources>
